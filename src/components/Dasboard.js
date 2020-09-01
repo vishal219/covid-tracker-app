@@ -20,7 +20,7 @@ export default class Dasboard extends Component {
     }
     
     render() {
-      const classes=style()
+      
        
         return (
           
@@ -28,7 +28,7 @@ export default class Dasboard extends Component {
                
                <img src={pic} alt="Covid-19" style={{width:'100%'}}></img>
                <h1 className="center">Covid-19 Stats</h1> 
-               <table className={classes.table}>
+               <table >
         <thead>
           <tr>
               <th >Name</th>
