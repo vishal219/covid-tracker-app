@@ -50,10 +50,10 @@ export default class Dasboard extends Component {
                <table className={classes.table}>
         <thead>
           <tr>
-              <th className={classes.bold}>Name</th>
-              <th className={classes.bold}>Total</th>
-              <th className={classes.bold}>Recovered</th>
-              <th className={classes.bold}>Deaths</th>
+              <th >Name</th>
+              <th>Total</th>
+              <th >Recovered</th>
+              <th >Deaths</th>
               
           </tr>
         </thead>
@@ -62,7 +62,7 @@ export default class Dasboard extends Component {
           {
             
               this.state.post.map((row)=>(
-              <tr key={row.Country} className={classes.row}>
+              <tr key={row.Country}>
                 <td>{row.Country}</td>
                 <td>{row.TotalConfirmed}  </td>
                 <td>{row.TotalRecovered} </td>
