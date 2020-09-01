@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header/>
       <Switch>
-        <Route exact path="/" component={Dasboard}></Route>
+        <Route path="/" component={Dasboard}></Route>
         {/* <Route path="/india" component={India}></Route> */}
       </Switch>
     </div>
