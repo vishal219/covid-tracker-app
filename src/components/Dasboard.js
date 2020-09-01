@@ -44,8 +44,8 @@ export default class Dasboard extends Component {
               this.state.post.map((row)=>(
               <tr key={row.Country}>
                 <td>{row.Country}</td>
-                <td>{row.TotalConfirmed}  +({row.NewConfirmed})</td>
-                <td>{row.TotalRecovered}  +({row.NewDeaths})</td>
+                <td>{row.TotalConfirmed}  </td>
+                <td>{row.TotalRecovered} </td>
                 <td>{row.TotalDeaths}</td>
               </tr>
           ))}
