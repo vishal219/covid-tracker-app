@@ -1,25 +1,6 @@
 import React, { Component } from 'react'
 import axios from  'axios'
 import pic from './cc.jpg'
-import {makeStyles} from '@material-ui/core'
-const style=makeStyles({
-  table:{
-    width: '100%',
-    display: 'table',
-    borderCollapse: 'collapse',
-    borderSpacing: '0',
-    boxSizing: 'inherit',
-    fontFamily: 'Segoe UI'
-  },
-  bold:{
-    textAlign:'left',
-
-  },
-  row:{
-    borderBottom: '1px solid lightgray',
-    padding: '3px 0px 3px 0px'
-  }
-})
 
 export default class Dasboard extends Component {
   state={
