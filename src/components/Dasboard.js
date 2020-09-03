@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from  'axios'
-import pic from './cc.jpg'
+import pic from './img.jpg'
 import {withStyles} from '@material-ui/core/styles'
 
 const styles=theme=>({
@@ -9,8 +9,13 @@ const styles=theme=>({
     display:"flex",
     justifyContent:"space-between",
     margin:"0 auto",
-    flexWrap:"wrap"
+    flexWrap:"wrap",
+    // opacity:"0",
+    // transition:'opacity 2s linear ',
+    
+    
   },
+  
   card:{
     padding:"20px",
     backgroundColor:"#a8b9cf",
@@ -25,6 +30,9 @@ const styles=theme=>({
       marginBottom:"10px",
       padding:"10px"  
     },
+    "&:hover":{
+      transform:"scale(1.2)"
+    },
     borderRadius:"6%"
   },
   recovered:{
@@ -32,10 +40,11 @@ const styles=theme=>({
     backgroundImage:"none"
   },
   deaths:{
-    backgroundColor:"#ff3333",
+    backgroundColor:"#ee6e73",
     backgroundImage:"none"
   },
   big:{
+    textAlign:"center",
     fontSize:"40px",
     padding:"0px",
     [theme.breakpoints.down('sm')]:{
@@ -68,6 +77,7 @@ class Dasboard extends Component {
                 post,overall
             })
         })
+        document.getElementById("cont").classList.add("over")
     
     }
    
@@ -79,7 +89,7 @@ class Dasboard extends Component {
             <div>
                
                <img src={pic} alt="Covid-19" style={{width:'100%'}}></img>
-               <div className={classes.container}>
+               <div className={classes.container} id="cont">
                 <div className={classes.card}>
                   <h2 className={classes.small}>Total</h2>
                   <p className={classes.big}>{this.state.overall.TotalConfirmed}</p>
@@ -97,9 +107,9 @@ class Dasboard extends Component {
                   <p className={classes.big}>{this.state.overall.NewConfirmed}</p>
                 </div>
                </div>
-               <h1 className="center">Covid-19 Stats</h1> 
+               <h1 style={{textAlign:"center"}}>Covid-19 Stats</h1> 
                <table >
-        <thead>
+        <thead style={{textAlign:"left"}}>
           <tr>
               <th >Name</th>
               <th>Total</th>
@@ -122,6 +132,9 @@ class Dasboard extends Component {
           ))}
         </tbody>
       </table>
+      <div>
+        
+      </div>
             </div>
         )
     }

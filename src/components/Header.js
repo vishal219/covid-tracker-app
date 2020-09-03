@@ -26,7 +26,7 @@ export default function Header() {
         
              <nav className={classes.nav}>
                 <div className={classes.navwrapper}>
-                    <a href="#" class={classes.brand}>Covid-Info</a>
+                    <a href='' className={classes.brand}>Covid-Info</a>
                     {/* <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <Link to="/india">
                             India
