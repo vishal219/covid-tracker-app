@@ -132,9 +132,7 @@ class Dasboard extends Component {
           ))}
         </tbody>
       </table>
-      <div>
-        
-      </div>
+     
             </div>
         )
     }

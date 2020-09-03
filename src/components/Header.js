@@ -6,7 +6,8 @@ nav:{
     color: '#fff',
     backgroundColor: '#ee6e73',
     width: '100%',
-    height: '56px'
+    height: '56px',
+    position:'fixed'
 },
 navwrapper:{
     display: 'flex',
